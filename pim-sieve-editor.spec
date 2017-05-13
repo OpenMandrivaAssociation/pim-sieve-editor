@@ -40,6 +40,8 @@ Sieve editor for KDE PIM applications.
 %{_sysconfdir}/xdg/sieveeditor.categories
 %{_sysconfdir}/xdg/sieveeditor.renamecategories
 
+%dependinglibpackage sieveeditor 5
+
 #----------------------------------------------------------------------
 
 %prep
