@@ -1,6 +1,6 @@
 Summary:	Sieve editor for KDE PIM applications
 Name:		pim-sieve-editor
-Version:	17.04.2
+Version:	17.04.3
 Release:	1
 Epoch:		3
 License:	GPLv2+
