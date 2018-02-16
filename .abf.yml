@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   pim-sieve-editor-17.12.1.tar.xz: 184d7272ab19b7419fbecbdcb63e270e167c2368
+sources:
+  pim-sieve-editor-17.12.2.tar.xz: 9dedc18dd99582d9a8464f9ef2768b5d38b98144
