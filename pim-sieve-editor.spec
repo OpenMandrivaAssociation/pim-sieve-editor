@@ -46,12 +46,12 @@ Sieve editor for KDE PIM applications.
 
 %prep
 %setup -q
-%cmake_kde5
+%cmake_kde5 -G "Unix Makefiles"
 
 %build
-%ninja -C build
+%make -C build
 
 %install
-%ninja_install -C build
+%makeinstall_std -C build
 
 %find_lang sieveeditor
