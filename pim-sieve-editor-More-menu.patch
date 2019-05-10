@@ -1,0 +1,12 @@
+diff -up pim-sieve-editor-19.04.1/src/org.kde.sieveeditor.desktop.omv~ pim-sieve-editor-19.04.1/src/org.kde.sieveeditor.desktop
+--- pim-sieve-editor-19.04.1/src/org.kde.sieveeditor.desktop.omv~	2019-05-10 15:59:46.351973750 +0200
++++ pim-sieve-editor-19.04.1/src/org.kde.sieveeditor.desktop	2019-05-10 15:59:53.559917358 +0200
+@@ -110,7 +110,7 @@ Comment[x-test]=xxEdit IMAP Sieve filter
+ Comment[zh_CN]=编辑 IMAP 筛选过滤器
+ Comment[zh_TW]=編輯 IMAP 篩選器
+ Terminal=false
+-Categories=Qt;KDE;Office;Network;X-KDE-Sieve;
++Categories=Qt;KDE;Office;Network;X-KDE-Sieve;X-MandrivaLinux-More;
+ InitialPreference=10
+ X-DBUS-StartupType=Unique
+ X-DBUS-ServiceName=org.kde.sieveeditor

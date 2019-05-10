@@ -3,12 +3,13 @@
 Summary:	Sieve editor for KDE PIM applications
 Name:		pim-sieve-editor
 Version:	19.04.1
-Release:	1
+Release:	2
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		pim-sieve-editor-More-menu.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5DBusAddons)
 BuildRequires:	cmake(KF5DocTools)
@@ -26,6 +27,7 @@ BuildRequires:	sasl-devel
 BuildRequires:	pkgconfig(Qt5Network)
 BuildRequires:	pkgconfig(Qt5Test)
 BuildRequires:	pkgconfig(Qt5Widgets)
+BuildRequires:	ninja
 Provides:	sieveeditor = %{EVRD}
 Conflicts:	sieveeditor < 3:17.04.0
 Obsoletes:	sieveeditor < 3:17.04.0
@@ -48,13 +50,13 @@ Sieve editor for KDE PIM applications.
 #----------------------------------------------------------------------
 
 %prep
-%setup -q
-%cmake_kde5 -G "Unix Makefiles"
+%autosetup -p1
+%cmake_kde5
 
 %build
-%make -C build
+%ninja_build -C build
 
 %install
-%makeinstall_std -C build
+%ninja_install -C build
 
 %find_lang sieveeditor
