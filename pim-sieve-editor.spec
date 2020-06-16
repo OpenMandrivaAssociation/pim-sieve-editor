@@ -3,7 +3,7 @@
 Summary:	Sieve editor for KDE PIM applications
 Name:		pim-sieve-editor
 Version:	20.04.2
-Release:	1
+Release:	2
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -27,7 +27,7 @@ BuildRequires:	sasl-devel
 BuildRequires:	pkgconfig(Qt5Network)
 BuildRequires:	pkgconfig(Qt5Test)
 BuildRequires:	pkgconfig(Qt5Widgets)
-BuildRequires:	ninja
+BuildRequires:	cmake(KUserFeedback)
 Provides:	sieveeditor = %{EVRD}
 Conflicts:	sieveeditor < 3:17.04.0
 Obsoletes:	sieveeditor < 3:17.04.0
