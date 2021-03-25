@@ -27,6 +27,7 @@ BuildRequires:	sasl-devel
 BuildRequires:	pkgconfig(Qt5Network)
 BuildRequires:	pkgconfig(Qt5Test)
 BuildRequires:	pkgconfig(Qt5Widgets)
+BuildRequires:	cmake(Qt5Keychain)
 BuildRequires:	cmake(KUserFeedback)
 Provides:	sieveeditor = %{EVRD}
 Conflicts:	sieveeditor < 3:17.04.0
