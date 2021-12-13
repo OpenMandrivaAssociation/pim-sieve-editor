@@ -2,7 +2,7 @@
 
 Summary:	Sieve editor for KDE PIM applications
 Name:		pim-sieve-editor
-Version:	21.08.3
+Version:	21.12.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -41,7 +41,6 @@ Sieve editor for KDE PIM applications.
 %{_kde5_applicationsdir}/org.kde.sieveeditor.desktop
 %{_bindir}/sieveeditor
 %{_datadir}/config.kcfg/sieveeditorglobalconfig.kcfg
-%{_datadir}/kconf_update/sieveeditor*
 %{_docdir}/*/*/sieveeditor
 %{_datadir}/qlogging-categories5/sieveeditor.categories
 %{_datadir}/qlogging-categories5/sieveeditor.renamecategories
