@@ -2,7 +2,7 @@
 
 Summary:	Sieve editor for KDE PIM applications
 Name:		pim-sieve-editor
-Version:	23.04.3
+Version:	23.08.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -18,10 +18,10 @@ BuildRequires:	cmake(KF5Bookmarks)
 BuildRequires:	cmake(KF5IconThemes)
 BuildRequires:	cmake(KF5KIO)
 BuildRequires:	cmake(KF5PimTextEdit)
-BuildRequires:	cmake(KF5MailTransport)
-BuildRequires:	cmake(KF5PimCommon)
-BuildRequires:	cmake(KF5LibKSieve)
-BuildRequires:	cmake(KF5IMAP)
+BuildRequires:	cmake(KPim5MailTransport)
+BuildRequires:	cmake(KPim5PimCommon)
+BuildRequires:	cmake(KPim5LibKSieve)
+BuildRequires:	cmake(KPim5IMAP)
 BuildRequires:	boost-devel
 BuildRequires:	sasl-devel
 BuildRequires:	pkgconfig(Qt5Network)
