@@ -28,6 +28,7 @@ BuildRequires:	pkgconfig(Qt6Test)
 BuildRequires:	pkgconfig(Qt6Widgets)
 BuildRequires:	cmake(Qt6Keychain)
 BuildRequires:	cmake(KF6UserFeedback)
+BuildRequires:	%mklibname -d KF6UserFeedbackWidgets
 
 %description
 Sieve editor for KDE PIM applications.
