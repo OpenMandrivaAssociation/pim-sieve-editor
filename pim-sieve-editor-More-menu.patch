@@ -1,0 +1,12 @@
+diff -up pim-sieve-editor-24.01.80/src/org.kde.sieveeditor.desktop.1~ pim-sieve-editor-24.01.80/src/org.kde.sieveeditor.desktop
+--- pim-sieve-editor-24.01.80/src/org.kde.sieveeditor.desktop.1~	2024-01-10 01:42:17.506650911 +0100
++++ pim-sieve-editor-24.01.80/src/org.kde.sieveeditor.desktop	2024-01-10 01:42:45.282907214 +0100
+@@ -130,7 +130,7 @@ Comment[uk]=Редагувати філ�
+ Comment[x-test]=xxEdit IMAP Sieve filtersxx
+ Comment[zh_CN]=编辑 IMAP 过滤器
+ Comment[zh_TW]=編輯 IMAP 篩選器
+-Categories=Qt;KDE;Office;Network;X-KDE-Sieve;
++Categories=Qt;KDE;Office;Network;X-KDE-Sieve;X-KDE-More;
+ InitialPreference=10
+ X-DBUS-StartupType=Unique
+ X-DBUS-ServiceName=org.kde.sieveeditor
