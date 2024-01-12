@@ -2,7 +2,7 @@
 
 Summary:	Sieve editor for KDE PIM applications
 Name:		plasma6-pim-sieve-editor
-Version:	24.01.85
+Version:	24.01.90
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -42,6 +42,7 @@ Sieve editor for KDE PIM applications.
 %{_datadir}/qlogging-categories6/sieveeditor.categories
 %{_datadir}/qlogging-categories6/sieveeditor.renamecategories
 %{_libdir}/libsieveeditor.so*
+%{_datadir}/icons/*/*/*/sieveeditor.*
 
 #----------------------------------------------------------------------
 
