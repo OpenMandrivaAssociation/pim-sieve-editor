@@ -9,7 +9,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		http://www.kde.org
+Url:		https://www.kde.org
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/pim/pim-sieve-editor/-/archive/%{gitbranch}/pim-sieve-editor-%{gitbranchd}.tar.bz2#/pim-sieve-editor-%{git}.tar.bz2
 %else
