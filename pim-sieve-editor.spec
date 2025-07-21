@@ -5,7 +5,7 @@
 
 Summary:	Sieve editor for KDE PIM applications
 Name:		pim-sieve-editor
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -37,32 +37,20 @@ BuildRequires:	cmake(Qt6Keychain)
 BuildRequires:	cmake(KF6UserFeedback)
 BuildRequires:	%mklibname -d KF6UserFeedbackWidgets
 
+%rename plasma6-pim-sieve-editor
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 Sieve editor for KDE PIM applications.
 
-%files -f sieveeditor.lang
+%files -f %{name}.lang
 %{_datadir}/metainfo/org.kde.sieveeditor.appdata.xml
 %{_datadir}/applications/org.kde.sieveeditor.desktop
 %{_bindir}/sieveeditor
 %{_datadir}/config.kcfg/sieveeditorglobalconfig.kcfg
-%{_docdir}/*/*/sieveeditor
 %{_datadir}/qlogging-categories6/sieveeditor.categories
 %{_datadir}/qlogging-categories6/sieveeditor.renamecategories
 %{_libdir}/libsieveeditor.so*
 %{_datadir}/icons/*/*/*/sieveeditor.*
-
-#----------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n pim-sieve-editor-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja_build -C build
-
-%install
-%ninja_install -C build
-
-%find_lang sieveeditor
