@@ -28,6 +28,7 @@ BuildRequires:	cmake(KPim6MailTransport)
 BuildRequires:	cmake(KPim6PimCommon)
 BuildRequires:	cmake(KPim6KSieve)
 BuildRequires:	cmake(KPim6IMAP)
+BuildRequires:	cmake(KF6TextAddonsWidgets)
 BuildRequires:	boost-devel
 BuildRequires:	sasl-devel
 BuildRequires:	pkgconfig(Qt6Network)
