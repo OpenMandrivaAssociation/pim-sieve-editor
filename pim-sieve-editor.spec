@@ -5,7 +5,7 @@
 
 Summary:	Sieve editor for KDE PIM applications
 Name:		pim-sieve-editor
-Version:	26.04.3
+Version:	26.08.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -15,7 +15,6 @@ Source0:	https://invent.kde.org/pim/pim-sieve-editor/-/archive/%{gitbranch}/pim-
 %else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/pim-sieve-editor-%{version}.tar.xz
 %endif
-Patch0:		pim-sieve-editor-More-menu.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF6DBusAddons)
 BuildRequires:	cmake(KF6DocTools)
@@ -41,7 +40,11 @@ BuildRequires:	%mklibname -d KF6UserFeedbackWidgets
 %rename plasma6-pim-sieve-editor
 
 BuildSystem:	cmake
+BuildOption:	-DBUILD_PYTHON_BINDINGS:BOOL=OFF
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
+%prep -a
+sed -i 's/X-KDE-Sieve;/X-KDE-Sieve;X-KDE-More;/' src/data/org.kde.sieveeditor.desktop
 
 %description
 Sieve editor for KDE PIM applications.

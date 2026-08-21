@@ -1,0 +1,57 @@
+warning: Downloading http://download.kde.org/stable/release-service/26.08.0/src/pim-sieve-editor-26.08.0.tar.xz to /home/bero/groktmp/gear/work/pim-sieve-editor/pim-sieve-editor-26.08.0.tar.xz
+Reading /var/tmp/rpm-tmp.Z5knnI
+Executing(mkbuilddir): /bin/sh -e /var/tmp/rpm-tmp.TO0K7C
+Creating(rpmbuild.env): /home/bero/groktmp/gear/work/pim-sieve-editor/BUILD/pim-sieve-editor-26.08.0-build/rpmbuild.env
+  RPM_SOURCE_DIR="/home/bero/groktmp/gear/work/pim-sieve-editor"
+  RPM_BUILD_DIR="/home/bero/groktmp/gear/work/pim-sieve-editor/BUILD/pim-sieve-editor-26.08.0-build"
+  RPM_OPT_FLAGS="-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto"
+  RPM_LD_FLAGS="-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -Wl,-O2  -Wl,--no-undefined -flto "
+  RPM_ARCH="x86_64"
+  RPM_OS="linux"
+  RPM_BUILD_NCPUS="32"
+  RPM_SPECPARTS_DIR="/home/bero/groktmp/gear/work/pim-sieve-editor/BUILD/pim-sieve-editor-26.08.0-build/SPECPARTS"
+  export RPM_SOURCE_DIR RPM_BUILD_DIR RPM_OPT_FLAGS RPM_ARCH RPM_OS RPM_BUILD_NCPUS RPM_SPECPARTS_DIR RPM_LD_FLAGS
+  RPM_DOC_DIR="/usr/share/doc"
+  export RPM_DOC_DIR
+  RPM_PACKAGE_NAME="pim-sieve-editor"
+  RPM_PACKAGE_VERSION="26.08.0"
+  RPM_PACKAGE_RELEASE="1"
+  export RPM_PACKAGE_NAME RPM_PACKAGE_VERSION RPM_PACKAGE_RELEASE
+  LANG=C.UTF-8
+  export LANG
+  unset CDPATH DISPLAY ||:
+  unset DEBUGINFOD_URLS ||:
+  unset RPM_CONFIG_DIR ||:
+  RPM_BUILD_ROOT="/home/bero/groktmp/gear/work/pim-sieve-editor/BUILD/pim-sieve-editor-26.08.0-build/BUILDROOT"
+  export RPM_BUILD_ROOT
+  
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/lib64/pkgconfig:/usr/share/pkgconfig"
+  export PKG_CONFIG_PATH
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.ELWEmf
++ umask 022
++ cd /home/bero/groktmp/gear/work/pim-sieve-editor/BUILD/pim-sieve-editor-26.08.0-build
++ cd /home/bero/groktmp/gear/work/pim-sieve-editor/BUILD/pim-sieve-editor-26.08.0-build
++ rm -rf pim-sieve-editor-26.08.0
++ /usr/bin/rpmuncompress -x -C pim-sieve-editor-26.08.0 /home/bero/groktmp/gear/work/pim-sieve-editor/pim-sieve-editor-26.08.0.tar.xz
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd pim-sieve-editor-26.08.0
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/rpmuncompress /home/bero/groktmp/gear/work/pim-sieve-editor/pim-sieve-editor-More-menu.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --reject-format=unified -b --suffix .1~
+The text leading up to this was:
+--------------------------
+|diff -up pim-sieve-editor-25.08.1/src/org.kde.sieveeditor.desktop.1~ pim-sieve-editor-25.08.1/src/org.kde.sieveeditor.desktop
+|--- pim-sieve-editor-25.08.1/src/org.kde.sieveeditor.desktop.1~	2025-09-09 06:31:02.000000000 +0200
+|+++ pim-sieve-editor-25.08.1/src/org.kde.sieveeditor.desktop	2025-09-12 20:29:49.631581837 +0200
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+1 out of 1 hunk ignored
+error: Bad exit status from /var/tmp/rpm-tmp.ELWEmf (%prep)
+
+RPM build warnings:
+    Downloading http://download.kde.org/stable/release-service/26.08.0/src/pim-sieve-editor-26.08.0.tar.xz to /home/bero/groktmp/gear/work/pim-sieve-editor/pim-sieve-editor-26.08.0.tar.xz
+
+RPM build errors:
+    Bad exit status from /var/tmp/rpm-tmp.ELWEmf (%prep)
